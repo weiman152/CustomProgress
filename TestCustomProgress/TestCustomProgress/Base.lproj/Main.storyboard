@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestCustomProgress" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmB-Q5-gZv">
+                                <rect key="frame" x="149" y="318.5" width="77" height="30"/>
+                                <state key="normal" title="开始播进度"/>
+                                <connections>
+                                    <action selector="startPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJg-qY-GkI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lB7-ME-Yqn">
+                                <rect key="frame" x="172" y="378.5" width="31" height="30"/>
+                                <state key="normal" title="重置"/>
+                                <connections>
+                                    <action selector="reSet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h39-ff-L1V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NmB-Q5-gZv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jx0-Oa-s73"/>
+                            <constraint firstItem="lB7-ME-Yqn" firstAttribute="centerX" secondItem="NmB-Q5-gZv" secondAttribute="centerX" id="KF5-aB-4Hu"/>
+                            <constraint firstItem="lB7-ME-Yqn" firstAttribute="top" secondItem="NmB-Q5-gZv" secondAttribute="bottom" constant="30" id="a2g-YH-Vwx"/>
+                            <constraint firstItem="NmB-Q5-gZv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gac-e0-Q9j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+</document>
